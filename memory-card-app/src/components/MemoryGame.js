@@ -1,4 +1,5 @@
 import Deck from "./Deck"
+import CurrentScore from "./CurrentScore";
 
 function MemoryGame(props) {
     return (
@@ -8,6 +9,7 @@ function MemoryGame(props) {
                     props.imgSrcList
                 }
             />
+            <CurrentScore/>
         </div>
     );
 }

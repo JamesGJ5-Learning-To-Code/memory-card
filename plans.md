@@ -22,7 +22,7 @@
 
 - MemoryGame Component:
     -- DONE Renders a Deck component, passing into it the array of image src's via props
-    -- Renders a CurrentScore component
+    -- DONE Renders a CurrentScore component
     -- Renders a HighScore component
 
 - Deck component:
@@ -32,7 +32,7 @@
     -- Renders a div with an img (whose src is one from the aforementioned array) inside it
 
 - CurrentScore component:
-    -- Renders a div for displaying the current score, currently with just 'Current Score: ' as its text content
+    -- DONE Renders a div for displaying the current score, currently with just 'Current Score: ' as its text content
 
 - HighScore component:
     -- Renders a div for displaying the high score, currently with just 'High Score: ' as its text content
