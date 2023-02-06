@@ -1,5 +1,6 @@
 import Deck from "./Deck"
 import CurrentScore from "./CurrentScore";
+import HighScore from "./HighScore";
 
 function MemoryGame(props) {
     return (
@@ -10,6 +11,7 @@ function MemoryGame(props) {
                 }
             />
             <CurrentScore/>
+            <HighScore/>
         </div>
     );
 }
