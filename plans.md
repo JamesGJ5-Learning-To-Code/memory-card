@@ -15,7 +15,7 @@
     e) A function that displays cards ina  random order after a card is clicked
         - Invoke this function when the component mounts
 
-# Static version of app:
+# DONE Static version of app:
 
 - App Component:
     -- DONE Renders a MemoryGame component, passing into it an array of valid src's for images to be used in the game's cards
