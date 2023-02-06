@@ -69,6 +69,31 @@ States:
 
 Lifecycle:
 
-- Before the component is mounted, if imagesClickedThisRound.length > highScore, throw an error explaining that something may have gone wrong in data-loading
+- Don't worry about making sure the props inserted by App.js don't contradict each other--leave that for when you learn about testing
 
 - The only side effect I can think of as being relevant here is updating a global variable from inside a function. Specifically, when imagesClickedThisRound is changed (specifically, when it is increased), it should be compared with highScore to see if highScore should be updated. So, for the sake of practice using useEffect, let's create an effect that is dependent on imagesClickedThisRound that compares imagesClickedThisRound.length with highScore and updates highScore if necessary
+
+Step-by-step plan:
+
+1. Pass initial state of imagesInOrder (an array of all the src's, just rename imgSrcList to imagesInOrder) into Deck from App via MemoryGame
+2. Pass initial state of imagesClickedThisRound (an empty set) into MemoryGame from App
+3. Pass initial state of highScore into MemoryGame from App
+
+4. In Deck, before mounting, set state of imagesInOrder as that passed in via props
+5. In MemoryGame, before mounting, set state of imagesClickedThisRound as that passed in via props
+6. In MemoryGame, before mounting, set state of highScore as that passed in via props
+
+6. In Deck, instead of accessing the props in makeCardList, access imagesInOrder
+7. In Deck, write a method that randomises the state of imagesInOrder (don't mutate the state, reassign it to a randomised version of the previous state)
+8. Pass this method down to the img element in the child Card via render props to trigger when an onClick event is fired
+
+9. Pass imagesClickedThisRound.length from MemoryGame to CurrentScore via render props, naming the attribute "currentScore"
+10. In CurrentScore, display props.currentScore in the div.currentScore's text content
+11. In MemoryGame, write a method called processPlayerChoice that takes an src and:
+    - If it is not in imagesClickedThisRound, simply adds this src to the set via set.add
+    - If it is already in imagesClickedThisRound, simply empties the set via set.clear
+12. Pass this method down to the img element in the child Card via render props to trigger when an onClick event is fired and supply the src (which may be accessed via props.imgSrc)
+13. In MemoryGame, write an effect that depends on imagesClickedThisRound and compares imagesClickedThisRound.length to highScore, setting the latter to the former if the former is greater than the latter
+
+14. Pass highScore from MemoryGame to HighScore via render props, naming the attribute "highScore"
+15. In HighScore, display props.highScore in the div.highScore's text content
