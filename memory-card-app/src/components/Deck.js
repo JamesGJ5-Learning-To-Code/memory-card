@@ -5,16 +5,23 @@ import "./Deck.css";
 function Deck(props) {
     const [imagesInOrder, setImagesInOrder] = useState(props.imagesInOrder);
 
-    const randomiseImagesOrder = () => {
-        const newImagesInOrder = JSON.parse(JSON.stringify(imagesInOrder));
-        newImagesInOrder.sort((a, b) => 0.5 - Math.random());
+    // TODO: extract getDeepCopy and randomiseInPlace into their own functions
+    const getDeepCopy = (copiedObject) => {
+        return JSON.parse(JSON.stringify(copiedObject));
+    }
+    const randomiseInPlace = (arr) => {
+        arr.sort((a, b) => 0.5 - Math.random())
+    }
+    const shuffleDeck = () => {
+        const newImagesInOrder = getDeepCopy(imagesInOrder);
+        randomiseInPlace(newImagesInOrder);
         setImagesInOrder(newImagesInOrder);
     };
     const makeCard = (key, imgSrc) => {
         return <Card
             key={key}
             imgSrc={imgSrc}
-            onImgClick={randomiseImagesOrder}
+            onImgClick={shuffleDeck}
         />
     };
     const makeCardList = () => {
