@@ -95,5 +95,5 @@ Step-by-step plan:
 12. DONE Pass this method down to the img element in the child Card via render props to trigger when an onClick event is fired and supply the src (which may be accessed via props.imgSrc)
 13. In MemoryGame, write an effect that depends on imagesClickedThisRound and compares imagesClickedThisRound.length to highScore, setting the latter to the former if the former is greater than the latter
 
-14. Pass highScore from MemoryGame to HighScore via render props, naming the attribute "highScore"
-15. In HighScore, display props.highScore in the div.highScore's text content
+14. DONE Pass highScore from MemoryGame to HighScore via render props, naming the attribute "score"
+15. DONE In HighScore, display props.highScore in the div.highScore's text content

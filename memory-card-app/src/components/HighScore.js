@@ -1,7 +1,7 @@
-function HighScore() {
+function HighScore(props) {
     return (
         <div className="HighScore">
-            High Score:
+            High Score: {props.score}
         </div>
     )
 }

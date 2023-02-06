@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import getDeepCopy from "../refactoredFunctions/getDeepCopy";
 import Deck from "./Deck"
 import CurrentScore from "./CurrentScore";
@@ -22,7 +22,9 @@ function MemoryGame(props) {
     };
     return (
         <div className="MemoryGame">
-            <HighScore/>
+            <HighScore
+                score={highScore}
+            />
             <CurrentScore
                 score={imagesClickedThisRound.length}
             />
