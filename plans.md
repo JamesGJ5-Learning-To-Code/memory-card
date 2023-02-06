@@ -26,7 +26,7 @@
     -- DONE Renders a HighScore component
 
 - Deck component:
-    -- Renders a Card component for each src in the aforementioned array in the same order as in the array, passing the src into it via props
+    -- DONE Renders a Card component for each src in the aforementioned array in the same order as in the array, passing the src into it via props
 
 - Card component:
     -- Renders a div with an img (whose src is one from the aforementioned array) inside it
