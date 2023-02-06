@@ -8,8 +8,8 @@ function MemoryGame(props) {
             <HighScore/>
             <CurrentScore/>
             <Deck
-                imgSrcList={
-                    props.imgSrcList
+                imagesInOrder={
+                    props.imagesInOrder
                 }
             />
         </div>

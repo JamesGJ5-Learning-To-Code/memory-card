@@ -21,7 +21,7 @@ function App() {
   return (
     <div className="App">
       <MemoryGame
-        imgSrcList={
+        imagesInOrder={
           [
             photo1,
             photo2,

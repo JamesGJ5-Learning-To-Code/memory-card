@@ -10,9 +10,9 @@ function Deck(props) {
     };
     const makeCardList = () => {
         const cardList = [];
-        const imgSrcList = props.imgSrcList;
-        for (let i = 0; i < imgSrcList.length; i += 1) {
-            cardList.push(makeCard(i, imgSrcList[i]));
+        const imagesInOrder = props.imagesInOrder;
+        for (let i = 0; i < imagesInOrder.length; i += 1) {
+            cardList.push(makeCard(i, imagesInOrder[i]));
         }
         return cardList;
     };
