@@ -10,7 +10,9 @@ function MemoryGame(props) {
     return (
         <div className="MemoryGame">
             <HighScore/>
-            <CurrentScore/>
+            <CurrentScore
+                score={imagesClickedThisRound.size}
+            />
             <Deck
                 imagesInOrder={
                     props.imagesInOrder

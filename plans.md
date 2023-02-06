@@ -87,8 +87,8 @@ Step-by-step plan:
 7. DONE In Deck, write a method that randomises the state of imagesInOrder (don't mutate the state, reassign it to a randomised version of the previous state)
 8. DONE Pass this method down to the img element in the child Card via render props to trigger when an onClick event is fired
 
-9. Pass imagesClickedThisRound.length from MemoryGame to CurrentScore via render props, naming the attribute "currentScore"
-10. In CurrentScore, display props.currentScore in the div.currentScore's text content
+9. DONE Pass imagesClickedThisRound.length from MemoryGame to CurrentScore via render props, naming the attribute "score"
+10. DONE In CurrentScore, display props.score in the div.currentScore's text content
 11. In MemoryGame, write a method called processPlayerChoice that takes an src and:
     - If it is not in imagesClickedThisRound, simply adds this src to the set via set.add
     - If it is already in imagesClickedThisRound, simply empties the set via set.clear
