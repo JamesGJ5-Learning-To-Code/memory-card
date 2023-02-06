@@ -21,7 +21,7 @@
     -- DONE Renders a MemoryGame component, passing into it an array of valid src's for images to be used in the game's cards
 
 - MemoryGame Component:
-    -- Renders a Deck component, passing into it the array of image src's via props
+    -- DONE Renders a Deck component, passing into it the array of image src's via props
     -- Renders a CurrentScore component
     -- Renders a HighScore component
 
