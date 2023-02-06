@@ -77,7 +77,7 @@ Step-by-step plan:
 
 1. DONE Pass initial state of imagesInOrder (an array of all the src's, just rename imgSrcList to imagesInOrder) into Deck from App via MemoryGame
 2. DONE Pass initial state of imagesClickedThisRound (an empty set) into MemoryGame from App
-3. Pass initial state of highScore into MemoryGame from App
+3. DONE Pass initial state of highScore into MemoryGame from App
 
 4. In Deck, before mounting, set state of imagesInOrder as that passed in via props
 5. In MemoryGame, before mounting, set state of imagesClickedThisRound as that passed in via props
