@@ -89,10 +89,10 @@ Step-by-step plan:
 
 9. DONE Pass imagesClickedThisRound.length from MemoryGame to CurrentScore via render props, naming the attribute "score"
 10. DONE In CurrentScore, display props.score in the div.currentScore's text content
-11. In MemoryGame, write a method called processPlayerChoice that takes an src and:
+11. DONE In MemoryGame, write a method called processPlayerChoice that takes an src and:
     - If it is not in imagesClickedThisRound, simply adds this src to the set via set.add
     - If it is already in imagesClickedThisRound, simply empties the set via set.clear
-12. Pass this method down to the img element in the child Card via render props to trigger when an onClick event is fired and supply the src (which may be accessed via props.imgSrc)
+12. DONE Pass this method down to the img element in the child Card via render props to trigger when an onClick event is fired and supply the src (which may be accessed via props.imgSrc)
 13. In MemoryGame, write an effect that depends on imagesClickedThisRound and compares imagesClickedThisRound.length to highScore, setting the latter to the former if the former is greater than the latter
 
 14. Pass highScore from MemoryGame to HighScore via render props, naming the attribute "highScore"

@@ -38,7 +38,7 @@ function App() {
           ]
         }
         imagesClickedThisRound={
-          new Set()
+          []
         }
         highScore={0}
       />

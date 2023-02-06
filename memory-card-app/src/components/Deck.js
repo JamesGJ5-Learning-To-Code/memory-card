@@ -19,7 +19,12 @@ function Deck(props) {
         return <Card
             key={key}
             imgSrc={imgSrc}
-            onImgClick={shuffleDeck}
+            onImgClick={
+                {
+                    shuffleDeck,
+                    processPlayerChoice: props.onCardImgClick
+                }
+            }
         />
     };
     const makeCardList = () => {
