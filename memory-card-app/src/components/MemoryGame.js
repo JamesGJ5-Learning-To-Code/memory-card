@@ -8,6 +8,13 @@ function MemoryGame(props) {
     const [imagesClickedThisRound, setImagesClickedThisRound] = useState(props.imagesClickedThisRound);
     const [highScore, setHighScore] = useState(props.highScore);
 
+    useEffect(() => {
+        const currentScore = imagesClickedThisRound.length;
+        if (currentScore > highScore) {
+            setHighScore(currentScore);
+        }
+    }, [imagesClickedThisRound]);
+
     const processPlayerChoice = (imgSrc) => {
         // TODO: consider replacing below with ternary operator assignment, 
         // using concat method in the falsy case
