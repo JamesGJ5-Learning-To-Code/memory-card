@@ -1,14 +1,12 @@
 import { useState } from "react";
+import getDeepCopy from "../refactoredFunctions/getDeepCopy";
 import Card from "./Card";
 import "./Deck.css";
 
 function Deck(props) {
     const [imagesInOrder, setImagesInOrder] = useState(props.imagesInOrder);
 
-    // TODO: extract getDeepCopy and randomiseInPlace into their own functions
-    const getDeepCopy = (copiedObject) => {
-        return JSON.parse(JSON.stringify(copiedObject));
-    }
+    // TODO: replace with something similar from npm
     const randomiseInPlace = (arr) => {
         arr.sort((a, b) => 0.5 - Math.random())
     }
