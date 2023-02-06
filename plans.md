@@ -36,3 +36,33 @@
 
 - HighScore component:
     -- DONE Renders a div for displaying the high score, currently with just 'High Score: ' as its text content
+
+# Interactive version of app:
+
+States:
+
+- Array of src values of images to populate the Cards in the same order as they appear in the array (state called imagesInOrder):
+    -- Affected by:
+        --- Clicking an image (randomises the array)
+    -- Affects:
+        --- Each Card, specifically in terms of which image it shows
+    -- Common "ancestor" of affecters and affected:
+        --- Deck
+
+- Set of src values of images already clicked in current round (state called imagesClickedThisRound):
+    -- Affected by:
+        --- Clicking an image that has not been clicked in this round (adds an src into the set via set.add)
+        --- Clicking an image that has already been clicked in this round (empties the set via set.clear)
+    -- Affects:
+        --- Text content of the CurrentScore's div.CurrentScore (using set.size)
+        --- highScore state (when set.size exceeds highScore, highScore is increased to it)
+    -- Common "ancestor" of affecters and affected:
+        --- MemoryGame
+
+- High score achieved in game (state called highScore):
+    -- Affected by:
+        --- imagesClickedThisRound.length being higher than highScore (highScore is increased to imagesClickedThisRound.length)
+    -- Affects:
+        --- Text content of HighScore's div.HighScore
+    -- Common "ancestor" of affecters and affected:
+        --- MemoryGame
