@@ -79,7 +79,7 @@ Step-by-step plan:
 2. DONE Pass initial state of imagesClickedThisRound (an empty set) into MemoryGame from App
 3. DONE Pass initial state of highScore into MemoryGame from App
 
-4. In Deck, before mounting, set state of imagesInOrder as that passed in via props
+4. DONE In Deck, before mounting, set state of imagesInOrder as that passed in via props
 5. In MemoryGame, before mounting, set state of imagesClickedThisRound as that passed in via props
 6. In MemoryGame, before mounting, set state of highScore as that passed in via props
 

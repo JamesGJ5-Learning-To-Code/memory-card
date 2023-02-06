@@ -1,7 +1,10 @@
+import { useState } from "react";
 import Card from "./Card";
 import "./Deck.css";
 
 function Deck(props) {
+    const [imagesInOrder, setImagesInOrder] = useState(props.imagesInOrder);
+
     const makeCard = (key, imgSrc) => {
         return <Card
             key={key}
