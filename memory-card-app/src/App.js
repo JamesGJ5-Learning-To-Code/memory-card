@@ -37,6 +37,9 @@ function App() {
             photo12,
           ]
         }
+        imagesClickedThisRound={
+          new Set()
+        }
       />
     </div>
   );
