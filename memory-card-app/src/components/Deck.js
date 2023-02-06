@@ -13,7 +13,6 @@ function Deck(props) {
     };
     const makeCardList = () => {
         const cardList = [];
-        const imagesInOrder = props.imagesInOrder;
         for (let i = 0; i < imagesInOrder.length; i += 1) {
             cardList.push(makeCard(i, imagesInOrder[i]));
         }

@@ -83,7 +83,7 @@ Step-by-step plan:
 5. DONE In MemoryGame, before mounting, set state of imagesClickedThisRound as that passed in via props
 6. DONE In MemoryGame, before mounting, set state of highScore as that passed in via props
 
-6. In Deck, instead of accessing the props in makeCardList, access imagesInOrder
+6. DONE In Deck, instead of accessing the props in makeCardList, access imagesInOrder
 7. In Deck, write a method that randomises the state of imagesInOrder (don't mutate the state, reassign it to a randomised version of the previous state)
 8. Pass this method down to the img element in the child Card via render props to trigger when an onClick event is fired
 
