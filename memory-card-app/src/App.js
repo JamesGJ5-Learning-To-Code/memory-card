@@ -2,6 +2,8 @@ import MemoryGame from "./components/MemoryGame";
 // TODO: see if you can import the below as a list or 
 // something, using a client-side solution (so fs may 
 // not work)
+// TODO: see if you can figure out how to make the 
+// images appear on the page more quickly
 import photo1 from "./images/photo1.jpg";
 import photo2 from "./images/photo2.jpg";
 import photo3 from "./images/photo3.jpg";
