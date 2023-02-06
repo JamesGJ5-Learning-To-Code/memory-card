@@ -29,7 +29,7 @@
     -- DONE Renders a Card component for each src in the aforementioned array in the same order as in the array, passing the src into it via props
 
 - Card component:
-    -- Renders a div with an img (whose src is one from the aforementioned array) inside it
+    -- DONE Renders a div with an img (whose src is one from the aforementioned array) inside it
 
 - CurrentScore component:
     -- DONE Renders a div for displaying the current score, currently with just 'Current Score: ' as its text content
