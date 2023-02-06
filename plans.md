@@ -66,3 +66,9 @@ States:
         --- Text content of HighScore's div.HighScore
     -- Common "ancestor" of affecters and affected:
         --- MemoryGame
+
+Lifecycle:
+
+- Before the component is mounted, if imagesClickedThisRound.length > highScore, throw an error explaining that something may have gone wrong in data-loading
+
+- The only side effect I can think of as being relevant here is updating a global variable from inside a function. Specifically, when imagesClickedThisRound is changed (specifically, when it is increased), it should be compared with highScore to see if highScore should be updated. So, for the sake of practice using useEffect, let's create an effect that is dependent on imagesClickedThisRound that compares imagesClickedThisRound.length with highScore and updates highScore if necessary
