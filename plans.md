@@ -84,8 +84,8 @@ Step-by-step plan:
 6. DONE In MemoryGame, before mounting, set state of highScore as that passed in via props
 
 6. DONE In Deck, instead of accessing the props in makeCardList, access imagesInOrder
-7. In Deck, write a method that randomises the state of imagesInOrder (don't mutate the state, reassign it to a randomised version of the previous state)
-8. Pass this method down to the img element in the child Card via render props to trigger when an onClick event is fired
+7. DONE In Deck, write a method that randomises the state of imagesInOrder (don't mutate the state, reassign it to a randomised version of the previous state)
+8. DONE Pass this method down to the img element in the child Card via render props to trigger when an onClick event is fired
 
 9. Pass imagesClickedThisRound.length from MemoryGame to CurrentScore via render props, naming the attribute "currentScore"
 10. In CurrentScore, display props.currentScore in the div.currentScore's text content
