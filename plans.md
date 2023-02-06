@@ -18,9 +18,9 @@
 # Static version of app:
 
 - App Component:
-    -- Renders a Game component, passing into it an array of valid src's for images to be used in the game's cards
+    -- DONE Renders a MemoryGame component, passing into it an array of valid src's for images to be used in the game's cards
 
-- Game Component:
+- MemoryGame Component:
     -- Renders a Deck component
     -- Renders a CurrentScore component
     -- Renders a HighScore component
