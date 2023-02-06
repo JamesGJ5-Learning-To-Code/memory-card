@@ -40,7 +40,7 @@ function App() {
         imagesClickedThisRound={
           new Set()
         }
-        highScore="0"
+        highScore={0}
       />
     </div>
   );
