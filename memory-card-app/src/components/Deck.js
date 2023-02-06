@@ -1,4 +1,5 @@
 import Card from "./Card";
+import "./Deck.css";
 
 function Deck(props) {
     const makeCard = (key, imgSrc) => {
