@@ -21,12 +21,12 @@
     -- DONE Renders a MemoryGame component, passing into it an array of valid src's for images to be used in the game's cards
 
 - MemoryGame Component:
-    -- Renders a Deck component
+    -- Renders a Deck component, passing into it the array of image src's via props
     -- Renders a CurrentScore component
     -- Renders a HighScore component
 
 - Deck component:
-    -- Renders a Card component for each src in the aforementioned array in the same order as in the array
+    -- Renders a Card component for each src in the aforementioned array in the same order as in the array, passing the src into it via props
 
 - Card component:
     -- Renders a div with an img (whose src is one from the aforementioned array) inside it
